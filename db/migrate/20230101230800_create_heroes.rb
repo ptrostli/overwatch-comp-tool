@@ -2,10 +2,10 @@ class CreateHeroes < ActiveRecord::Migration[5.2]
   def change
     create_table :heroes do |t|
       t.string :name, null:false
-      t.string :health, null:false
-      t.string :shield_hp
-      t.string :armor_hp
-      t.string :barrier_hp
+      t.integer :health, null:false
+      t.integer :shield
+      t.integer :armor
+      t.integer :barrier
 
       t.belongs_to :composition
 
