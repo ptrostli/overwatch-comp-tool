@@ -1,6 +1,6 @@
-class CreateHeroes < ActiveRecord::Migration[5.2]
+class CreateHeros < ActiveRecord::Migration[5.2]
   def change
-    create_table :heroes do |t|
+    create_table :heros do |t|
       t.string :name, null:false
       t.string :health, null:false
       t.string :shield_hp
