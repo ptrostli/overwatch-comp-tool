@@ -10,17 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_02_003718) do
+ActiveRecord::Schema.define(version: 2023_01_05_001959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "control_maps", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "first", null: false
+    t.string "second", null: false
+    t.string "third", null: false
+    t.bigint "map_types_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["map_types_id"], name: "index_control_maps_on_map_types_id"
+  end
+
+  create_table "control_maps_normal_maps", id: false, force: :cascade do |t|
+    t.bigint "normal_map_id", null: false
+    t.bigint "control_map_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["control_map_id"], name: "index_control_maps_normal_maps_on_control_map_id"
+    t.index ["normal_map_id"], name: "index_control_maps_normal_maps_on_normal_map_id"
+  end
+
   create_table "heroes", force: :cascade do |t|
     t.string "name", null: false
+    t.string "role", null: false
     t.string "health", null: false
-    t.string "shield_hp"
-    t.string "armor_hp"
-    t.string "barrier_hp"
+    t.string "shield"
+    t.string "armor"
+    t.string "barrier"
     t.bigint "composition_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -36,8 +57,16 @@ ActiveRecord::Schema.define(version: 2023_01_02_003718) do
     t.index ["team_id"], name: "index_heroes_teams_on_team_id"
   end
 
+  create_table "normal_maps", force: :cascade do |t|
+    t.string "name", null: false
+    t.bigint "map_types_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["map_types_id"], name: "index_normal_maps_on_map_types_id"
+  end
+
   create_table "teams", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
