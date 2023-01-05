@@ -1,6 +1,8 @@
 User.destroy_all
 Hero.destroy_all
 Team.destroy_all
+NormalMap.destroy_all
+ControlMap.destroy_all
 
 user_1 = User.create(
   username: "User",
