@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2023_01_05_001959) do
 
   create_table "normal_maps", force: :cascade do |t|
     t.string "name", null: false
+    t.string "mode", null: false
     t.bigint "map_types_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -101,79 +101,79 @@ maps = [
   escort_maps = [
     NormalMap.create(
       name: "Circuit Royal",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Dorado",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Havana",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Junkertown",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Rialto",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Route 66",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Shambali Monastery",
-      type: "Escort"
+      mode: "Escort"
     ),
     NormalMap.create(
       name: "Watchpoint Gibraltar",
-      type: "Escort"
+      mode: "Escort"
     )
   ],
   hybrid_maps = [
     NormalMap.create(
       name: "Blizzard World",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Eichenwalde",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Hollywood",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Kings Row",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Midtown",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Numbani",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
     NormalMap.create(
       name: "Paraiso",
-      type: "Hybrid"
+      mode: "Hybrid"
     ),
   ],
   push_maps = [
     NormalMap.create(
       name: "Colosseo",
-      type: "Push"
+      mode: "Push"
     ),
     NormalMap.create(
       name: "Esperança",
-      type: "Push"
+      mode: "Push"
     ),
     NormalMap.create(
       name: "New Queen Street",
-      type: "Push"
+      mode: "Push"
     ),
   ],
   control_maps = [
