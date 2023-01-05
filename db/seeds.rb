@@ -1,5 +1,7 @@
+User.destroy_all
 Hero.destroy_all
-Composition.destroy_all
+Team.destroy_all
+# Composition.destroy_all
 
 user_1 = User.create(
   username: "User",
@@ -17,80 +19,80 @@ team_1 = Team.create(
 support_heroes = [
   zenyatta = Hero.create(
     name: "Zenyatta",
-    support: true,
+    role: "Support",
     health: 50,
     shield: 150,
-    armor: null,
-    barrier: null
+    armor: 0,
+    barrier: 0
   ),
   ana = Hero.create(
     name: "Ana",
-    support: true,
+    role: "Support",
     health: 200,
-    shield: null,
-    armor: null,
-    barrier: null
+    shield: 0,
+    armor: 0,
+    barrier: 0
   ),
   brigitte = Hero.create(
     name: "Brigitte",
-    support: true,
+    role: "Support",
     health: 150,
-    shield: null,
+    shield: 0,
     armor: 50,
-    barrier: null
+    barrier: 0
   ),
 ]
 
 tank_heroes = [
   reinhart = Hero.create(
     name: "Reinhart",
-    tank: true,
+    role: "Tank",
     health: 325,
-    shield: null,
+    shield: 0,
     armor: 300,
     barrier: 1200
   ),
   roadhog = Hero.create(
     name: "Roadhog",
-    tank: true,
+    role: "Tank",
     health: 700,
-    shield: null,
-    armor: null,
-    barrier: null
+    shield: 0,
+    armor: 0,
+    barrier: 0
   ),
 ]
 
 damage_heroes = [
   mccree = Hero.create(
     name: "McCree",
-    damage: true,
+    role: "Damage",
     health: 225,
-    shield: null,
-    armor: null,
-    barrier: null
+    shield: 0,
+    armor: 0,
+    barrier: 0
   ),
   soldier_76 = Hero.create(
     name: "Soldier 76",
-    damage: true,
+    role: "Damage",
     health: 200,
-    shield: null,
-    armor: null,
-    barrier: null
+    shield: 0,
+    armor: 0,
+    barrier: 0
   ),
   tracer = Hero.create(
     name: "Tracer",
-    damage: true,
+    role: "Damage",
     health: 150,
-    shield: null,
-    armor: null,
-    barrier: null
+    shield: 0,
+    armor: 0,
+    barrier: 0
   ),
   torbjorn = Hero.create(
     name: "Torbjorn",
-    damage: true,
+    role: "Damage",
     health: 200,
-    shield: null,
+    shield: 0,
     armor: 50,
-    barrier: null
+    barrier: 0
   ),
 ]
