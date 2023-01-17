@@ -445,7 +445,26 @@ maps = [
       third: "University"
     ),
   ],
-  # assault_maps = [
-
-  # ]
+  assault_maps = [
+    hamamura = NormalMap.create(
+      name: "Hanamura",
+      mode: "Assault"
+    ),
+    horizon_lunar_colony = NormalMap.create(
+      name: "Horizon Lunar Colony",
+      mode: "Assault"
+    ),
+    paris = NormalMap.create(
+      name: "Paris",
+      mode: "Assault"
+    ),
+    temple_of_anubis = NormalMap.create(
+      name: "Temple of Anubis",
+      mode: "Assault"
+    ),
+    volskaya_industries = NormalMap.create(
+      name: "Volskaya Industries",
+      mode: "Assault"
+    ),
+  ]
 ]
