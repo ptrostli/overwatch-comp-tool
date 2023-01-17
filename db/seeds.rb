@@ -336,38 +336,38 @@ heroes = [
 
 maps = [
   escort_maps = [
-    NormalMap.create(
+    circuit_royal = NormalMap.create(
       name: "Circuit Royal",
       mode: "Escort"
     ),
-    NormalMap.create(
+    dorado = NormalMap.create(
       name: "Dorado",
       mode: "Escort"
     ),
-    NormalMap.create(
+    havana = NormalMap.create(
       name: "Havana",
       mode: "Escort"
     ),
-    NormalMap.create(
+    junkertown = NormalMap.create(
       name: "Junkertown",
       mode: "Escort"
     ),
-    NormalMap.create(
+    rialto = NormalMap.create(
       name: "Rialto",
       mode: "Escort"
     ),
-    NormalMap.create(
+    route_66 = NormalMap.create(
       name: "Route 66",
       mode: "Escort"
     ),
-    NormalMap.create(
+    shambali_monastery = NormalMap.create(
       name: "Shambali Monastery",
       mode: "Escort"
     ),
-    NormalMap.create(
+    watchpoint_gibraltar = NormalMap.create(
       name: "Watchpoint Gibraltar",
       mode: "Escort"
-    )
+    ),
   ],
   hybrid_maps = [
     NormalMap.create(
@@ -400,45 +400,45 @@ maps = [
     ),
   ],
   push_maps = [
-    NormalMap.create(
+    colosseo = NormalMap.create(
       name: "Colosseo",
       mode: "Push"
     ),
-    NormalMap.create(
+    esperanca = NormalMap.create(
       name: "Esperança",
       mode: "Push"
     ),
-    NormalMap.create(
+    new_queen_street = NormalMap.create(
       name: "New Queen Street",
       mode: "Push"
     ),
   ],
   control_maps = [
-    ControlMap.create(
+    busan = ControlMap.create(
       name: "Busan",
       first: "Sanctuary",
       second: "Downtown",
       third: "Meka Base"
     ),
-    ControlMap.create(
+    ilios = ControlMap.create(
       name: "Ilios",
       first: "Ruins",
       second: "Lighthouse",
       third: "Well"
     ),
-    ControlMap.create(
+    lijiang_tower = ControlMap.create(
       name: "Lijiang Tower",
       first: "Night Market",
       second: "Garden",
       third: "Control Center"
     ),
-    ControlMap.create(
+    nepal = ControlMap.create(
       name: "Nepal",
       first: "Village",
       second: "Sanctum",
       third: "Shrine"
     ),
-    ControlMap.create(
+    oasis = ControlMap.create(
       name: "Oasis",
       first: "City Center",
       second: "Gardens",
@@ -446,6 +446,6 @@ maps = [
     ),
   ],
   # assault_maps = [
-  #   TO BE ADDED IN FUTURE
+
   # ]
 ]
