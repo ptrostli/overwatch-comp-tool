@@ -17,7 +17,6 @@ team_1 = Team.create(
   user: user_1
 )
 
-# HEROES SECTION IS INCOMPLETE
 heroes = [
   support_heroes = [
     ana = Hero.create(
@@ -145,7 +144,7 @@ heroes = [
         armor: 450,
         barrier: 0
       ),
-    ]
+    ],
     reinhart = Hero.create(
       name: "Reinhart",
       role: "Tank",
@@ -196,10 +195,90 @@ heroes = [
     ),
   ],
   damage_heroes = [
+    ashe = Hero.create(
+      name: "Ashe",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    bastion = Hero.create(
+      name: "Bastion",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 100,
+      barrier: 0
+    ),
     mccree = Hero.create(
       name: "McCree",
       role: "Damage",
       health: 225,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    echo = Hero.create(
+      name: "Echo",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    genji = Hero.create(
+      name: "Genji",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    hanzo = Hero.create(
+      name: "Hanzo",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    junkrat = Hero.create(
+      name: "Junkrat",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    mei = Hero.create(
+      name: "Mei",
+      role: "Damage",
+      health: 250,
+      shield: 0,
+      armor: 0,
+      barrier: [250,250,250,250,250]
+    ),
+    pharah = Hero.create(
+      name: "Pharah",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    reaper = Hero.create(
+      name: "Reaper",
+      role: "Damage",
+      health: 250,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    sojourn = Hero.create(
+      name: "Sojourn",
+      role: "Damage",
+      health: 200,
       shield: 0,
       armor: 0,
       barrier: 0
@@ -212,11 +291,19 @@ heroes = [
       armor: 0,
       barrier: 0
     ),
-    tracer = Hero.create(
-      name: "Tracer",
+    sombra = Hero.create(
+      name: "Sombra",
       role: "Damage",
-      health: 150,
+      health: 200,
       shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    symmetra = Hero.create(
+      name: "Symmetra",
+      role: "Damage",
+      health: 100,
+      shield: 125,
       armor: 0,
       barrier: 0
     ),
@@ -226,6 +313,22 @@ heroes = [
       health: 200,
       shield: 0,
       armor: 50,
+      barrier: 0
+    ),
+    tracer = Hero.create(
+      name: "Tracer",
+      role: "Damage",
+      health: 150,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    widowmaker = Hero.create(
+      name: "Widowmaker",
+      role: "Damage",
+      health: 200,
+      shield: 0,
+      armor: 0,
       barrier: 0
     ),
   ]
