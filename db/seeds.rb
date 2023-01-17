@@ -20,14 +20,6 @@ team_1 = Team.create(
 # HEROES SECTION IS INCOMPLETE
 heroes = [
   support_heroes = [
-    zenyatta = Hero.create(
-      name: "Zenyatta",
-      role: "Support",
-      health: 50,
-      shield: 150,
-      armor: 0,
-      barrier: 0
-    ),
     ana = Hero.create(
       name: "Ana",
       role: "Support",
@@ -44,8 +36,116 @@ heroes = [
       armor: 50,
       barrier: 0
     ),
+    baptiste = Hero.create(
+      name: "Baptiste",
+      role: "Support",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    kiriko = Hero.create(
+      name: "Kiriko",
+      role: "Support",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    lucio = Hero.create(
+      name: "Lucio",
+      role: "Support",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    mercy = Hero.create(
+      name: "Mercy",
+      role: "Support",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    moira = Hero.create(
+      name: "Moira",
+      role: "Support",
+      health: 200,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    zenyatta = Hero.create(
+      name: "Zenyatta",
+      role: "Support",
+      health: 50,
+      shield: 150,
+      armor: 0,
+      barrier: 0
+    ),
   ],
   tank_heroes = [
+    dva = [
+      dva_mech = Hero.create(
+        name: "D.Va",
+        role: "Tank",
+        health: 350,
+        shield: 0,
+        armor: 300,
+        barrier: 0
+      ),
+      dva_pilot = Hero.create(
+        name: "D.Va (Pilot)",
+        role: "Tank",
+        health: 150,
+        shield: 0,
+        armor: 0,
+        barrier: 0
+      ),
+    ],
+    doomfist = Hero.create(
+      name: "Doomfist",
+      role: "Tank",
+      health: 450,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    junker_queen = Hero.create(
+      name: "Junker Queen",
+      role: "Tank",
+      health: 425,
+      shield: 0,
+      armor: 0,
+      barrier: 0
+    ),
+    orisa = Hero.create(
+      name: "Orisa",
+      role: "Tank",
+      health: 275,
+      shield: 0,
+      armor: 275,
+      barrier: 0
+    ),
+    ramattra = [
+      ramattra_normal = Hero.create(
+        name: "Ramattra",
+        role: "Tank",
+        health: 450,
+        shield: 0,
+        armor: 0,
+        barrier: 1000
+      ),
+      ramattra_nemesis = Hero.create(
+        name: "Ramattra (Nemesis)",
+        role: "Tank",
+        health: 450,
+        shield: 0,
+        armor: 450,
+        barrier: 0
+      ),
+    ]
     reinhart = Hero.create(
       name: "Reinhart",
       role: "Tank",
@@ -61,6 +161,38 @@ heroes = [
       shield: 0,
       armor: 0,
       barrier: 0
+    ),
+    sigma = Hero.create(
+      name: "Sigma",
+      role: "Tank",
+      health: 350,
+      shield: 200,
+      armor: 0,
+      barrier: 700
+    ),
+    winston = Hero.create(
+      name: "Winston",
+      role: "Tank",
+      health: 350,
+      shield: 0,
+      armor: 200,
+      barrier: 700
+    ),
+    wrecking_ball = Hero.create(
+      name: "Wrecking Ball",
+      role: "Tank",
+      health: 550,
+      shield: 0,
+      armor: 150,
+      barrier: 700
+    ),
+    zarya = Hero.create(
+      name: "Zarya",
+      role: "Tank",
+      health: 550,
+      shield: 250,
+      armor: 0,
+      barrier: [200, 200]
     ),
   ],
   damage_heroes = [
